@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>read more</title>
+    <link rel="icon"  href="logo.png" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html;">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style3.css">
+    <style>
+      .grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 75px;
+  }
+    </style>
+</head>
+<body style="background-color:#DCDCDC ">
+    <div class="grid-container">
+    <img src="1.jpg" width="200px" height="100px" align="left"><br><br>
+	<img class="myslides" src="glass.jpg"  width="100%" height="500px"  border="10px"  title="Glass bulding">
+	<img class="myslides" src="i.jpeg"  width="100%" height="500px"  border="10px"  title="Apartments">
+	<img class="myslides" src="j.jpg"  width="100%" height="500px"  border="10px"  title="Office Building">
+	<img class="myslides" src="k.jpg"  width="100%" height="500px"  border="10px"  title="Luxury Hotel">
+  <img class="myslides" src="skyscraper.jpg"  width="100%" height="500px"   border="10px" title="Luxury Office">
+  <img class="myslides" src="skyscraper2.jpg"  width="100%" height="500px"  border="10px"  title="Office Buildings">
+
+	<script>     
+   var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("myslides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+</div>
+
+<p style="font-family: sans-serif;">Established in 1985, the Shalimar Group, popularly known	as luxury property builders in Lucknow is a diversified Business House headquartered in Lucknow, India. The Group’s footprints span sectors such as Real Estate, Property Management,	various Allied Services, Civil Construction, Imports &	Exports and Glass Processing. An ever growing and expanding business portfolio is the group's hallmark. which is steadily establishing itself as a leading Business Conglomerate.
+<br><br>
+Built on the cornerstones of Knowledge, Efficient Management & Transparency; Shalimar is well poised to contribute to and utilize the growth & development in each of these sectors. The luxury property builders in Lucknow have already developed nearly 6 million sq. ft. of residential & commercial property and is set to develop an additional 15 million sq. ft. area spread in major cities of UP and Delhi+NCR in the next couple of years.
+<br><br>
+The Group envisions to enrich lives and raise the standard of living of society at large.
+<br><br>
+The Group’s mission is to provide world class products & services in each of its areas of operations through the tenets of Knowledge & Expertise.
+<br><br>
+At the Shalimar Group, we have a strong and dedicated team of over 750 personnel who are our the partners in success. It is because of their dedication that we have developed a large base of satisfied customers, who are indeed priceless.</p>
+
+<br>
+<div class="footer-main-div">
+    <div class="footer-social-icons">
+      <ul>
+        
+        <li><a href="https://facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
+        </li>
+	<li><a href="https://instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+	</li>
+        <li><a href="https://twitter.com" target="blank"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li><a href="https://gmail.com" target="blank"><i class="fa fa-google-plus"></i></a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=eHidJx98pjs" target="blank"><i class="fa fa-youtube"></i></a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="footer-menu-one ">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li><a href="contact_us.html">Contact us</a></li>
+        
+        <li><a href="login.html">Login</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <br><br>
+        <p id="demo" style="color: white">
+          <script>
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d;
+        </script>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

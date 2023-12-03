@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="icon"  href="logo.png" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html;">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+
+<body style="background-color: #F0DEDE;";>
+	<style>
+		h2{
+			font-family:sans-serif;
+		color:black;
+		font-size: 80px;
+		text-align: center;
+		}
+		h4{
+			font-family:sans-serif;
+			color: #E137BF;
+			font-size: 40px;
+			text-align: center;
+		}
+
+
+	</style>
+	<img src="1.jpg" width="200px" height="100px" align="left">
+	<br>
+	<h2>Home</h2>
+	
+</p>
+	<img class="myslides" src="a.jpg"  width="100%" height="500px" title="Our First Project">
+	<img class="myslides" src="b.jpg"  width="100%" height="500px" title="Our Own Office">
+	<img class="myslides" src="c.jpg"  width="100%" height="500px" title="Thoughts">
+	<img class="myslides" src="d.jpg"  width="100%" height="500px" title="Thoughts">
+	<img class="myslides" src="e.jpg"  width="100%" height="500px"
+	title="Thoughts">
+	<img class="myslides" src="f.jpg"  width="100%" height="500px"
+	title="Thoughts">
+	<img class="myslides" src="g.jpg"  width="100%" height="500px"
+	title="Thoughts">
+	<img class="myslides" src="h.jpeg"  width="100%" height="500px"
+	title="Thoughts">
+	
+<script>     
+	 var slideIndex = 0;
+   	carousel();
+	function carousel() 
+	{
+    var i;
+    var x = document.getElementsByClassName("myslides");
+   		for (i = 0; i < x.length; i++) {
+    		x[i].style.display = "none"; 
+  			}
+  	slideIndex++;
+  	if (slideIndex > x.length) {slideIndex = 1} 
+  	x[slideIndex-1].style.display = "block"; 
+  	setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+</script>
+<br>
+
+<h4>Welcome to Shalimar</h4>
+
+<p style="background-color:#FAEE44; text-align: center; color: red; height: 150px; width: 1520px; padding: 25px; border-radius: 10%">
+Established in 1985, the Shalimar Group, popularly known as luxury property builders in Lucknow is a diversified Business House headquartered in Lucknow, India. The Group’s footprints span sectors such as Real Estate, Property Management, various Allied Services, Civil Construction, Imports & Exports and Glass Processing.
+</p>
+
+<script>
+  function openWin() 
+  {
+  window.open("read_more.html");
+  }
+</script>
+
+<form>
+	<div style="text-align:center">
+   <a href="read_more.html"><input type="button" value="Read more"></a>
+</div>
+</form>
+<br><br><br>
+<div class="footer-main-div">
+		<div class="footer-social-icons">
+			<ul>
+				
+				<li><a href="https://facebook.com" target="blank"><i class="fa fa-facebook"></i></a>
+				</li>
+				<li><a href="https://instagram.com" target="blank"><i class="fa fa-instagram"></i></a>
+				</li>
+				<li><a href="https://twitter.com" target="blank"><i class="fa fa-twitter"></i></a>
+				</li>
+				<li><a href="https://gmail.com" target="blank"><i class="fa fa-google-plus"></i></a>
+				</li>
+				<li><a href="https://www.youtube.com/watch?v=eHidJx98pjs" target="blank"><i class="fa fa-youtube"></i></a>
+				</li>
+
+			</ul>
+		</div>
+		<div class="footer-menu-one ">
+			<ul>
+				<li><a href="About us.html">Home</a></li>
+				<li><a href="About us.html">About us</a></li>
+				<li><a href="contact_us.html">Contact us</a></li>
+				
+				<li><a href="login.html">Login</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+				<br><br>
+				<p id="demo" style="color: white">
+    			<script>
+					var d = new Date();
+					document.getElementById("demo").innerHTML = d;
+				</script>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
